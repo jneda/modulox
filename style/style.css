@@ -45,6 +45,7 @@ a {
 
 /* Classes pour gérer les différentes couleurs de la catégorie
 dans les articles. */
+/* ☠ WARNING! À effacer si Sami passe dans le coin. ☠ */
 
 .first {
   color: var(--article-01);
@@ -82,6 +83,19 @@ p {
   font-size: 1.5rem;
   */
   font-size: 1.2rem;
+}
+
+/* Éléments */
+
+button {
+  width: 10rem;
+  height: 2.2rem;
+  font: inherit;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  border-radius: 4px;
 }
 
 /* Header */
@@ -195,6 +209,7 @@ img {
 #robots ul {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 }
 
 /* Mise en page de la carte produit */
@@ -204,7 +219,7 @@ img {
   margin: 0 auto 3rem;
   background-color: var(--white);
   border: 1px solid var(--gray-dark);
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .product-card img {
@@ -212,7 +227,9 @@ img {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  top: -1.6rem;
+  top: -1.4rem;
+  border: 1px solid var(--gray-dark);
+  border-radius: 6px;
   box-shadow: 0 1px 2px 1px var(--gray-dark);
 }
 
@@ -239,4 +256,48 @@ img {
 .product-shop p, i {
   color: var(--gray-darker);
   padding: 0 1rem;
+}
+
+/* Abonnement newsletter */
+
+#newsletter-subscribe {
+  height: 16rem;
+  padding-top: 3rem;
+  /* Propriétés image de fond */
+  background-image: url("../images/bg_contact.jpg");
+  background-size: 250%;
+  background-position: 50% 37%;
+}
+
+#newsletter-subscribe h2, p {
+  text-align: center;
+  color: var(--white);
+}
+
+#newsletter-subscribe h2 {
+  margin: 0;
+}
+
+#newsletter-subscribe p {
+  margin-top: 0.6rem;
+}
+
+#newsletter-subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter-subscribe input {
+  width: 80%;
+  height: 1.8rem;
+  margin: auto;
+  padding-left: 0.4rem;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#newsletter-subscribe button {
+  
+  margin: auto;
 }

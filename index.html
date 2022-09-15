@@ -18,6 +18,17 @@
   <!-- Tête de page -->
   <header>
     <img src="images/cropped-logo_modulox.png" alt="Logo Modulox">
+    <nav id="top-nav">
+      <ul>
+        <li><a href=""><img src="" alt="">Accueil</a></li>
+        <li><a href=""><img src="" alt="">Boutique</a></li>
+        <li><a href=""><img src="" alt="">À propos</a></li>
+        <li><a href=""><img src="" alt="">Actualités</a></li>
+        <li><a href=""><img src="" alt="">Mon compte</a></li>
+        <li><a href=""><img src="" alt="">Panier</a></li>
+        <li><a href=""><img src="" alt="">Contact</a></li>
+      </ul>
+    </nav>
     <button id="burger-menu-btn"></button>
   </header>
 
@@ -43,29 +54,29 @@
       <ul>
         <li>
           <article>
-            <img src="" alt="">
+            <img src="images/modulox-m3000-pan-230x288.png" alt="Le Panacotron M3000 PAN">
             <p>ROBOTS</p>
-            <h3></h3>
-            <p></p>
-            <img src="" alt="">
+            <h3>Panacotron M3000 PAN</h3>
+            <p>4637,00 €</p>
+            <img src="" alt="Icône panier">
           </article>
         </li>
         <li>
           <article>
-            <img src="" alt="">
+            <img src="images/modulox-m2000-st-230x288.png" alt="Le Panacotron M2000 ST">
             <p>ROBOTS</p>
-            <h3></h3>
-            <p></p>
-            <img src="" alt="">
+            <h3>Panacotron M2000 ST</h3>
+            <p>2225,00 €</p>
+            <img src="" alt="Icône panier">
           </article>
         </li>
         <li>
           <article>
-            <img src="" alt="">
+            <img src="images/modulox-m1000-gt-230x288.png" alt="Le Panacotron M1000 GT">
             <p>ROBOTS</p>
-            <h3></h3>
-            <p></p>
-            <img src="" alt="">
+            <h3>Panacotron M1000 GT</h3>
+            <p>1136,00 €</p>
+            <img src="" alt="Icône panier">
           </article>
         </li>
       </ul>
@@ -75,9 +86,9 @@
     <section id="newsletter-form">
       <h2>Abonnez-vous à notre newsletter</h2>
       <p>Recevez les mises à jour instantanément</p>
-      <form action="">
-        <label for=""></label>
-        <input type="email" name="" id="">
+      <form action="" name="newsletter-subscribe">
+        <label for="newsletter-user-email"></label>
+        <input type="email" name="newsletter-user-email" id="newsletter-user-email">
         <button>S'abonner</button>
       </form>
     </section>
@@ -89,28 +100,28 @@
       <ul>
         <li>
           <article>
-            <img src="" alt="">
+            <img src="images/bg_blog1-360x240.jpg" alt="Usine métallurgique">
             <p>ACTUALITÉS</p>
-            <h3></h3>
-            <p></p>
+            <h3>Modulox lauréat du programme RSE « Platine »</h3>
+            <p>Le Conseil Régional Nouvelle-Aquitaine a mis en place le Contrat d’Expérimentation pour le Développement Responsable de l’Emploi (PLATINE) qui a pour objet de financer les plans d’innovation sociale des entreprises (PME) locales en développement.</p>
             <a href=""></a>
           </article>
         </li>
         <li>
           <article>
-            <img src="" alt="">
+            <img src="images/bg_blog2-360x240.jpg" alt="Usine chimique">
             <p>ACTUALITÉS</p>
-            <h3></h3>
-            <p></p>
+            <h3>Inauguration des nouveaux locaux de Modulox</h3>
+            <p>La société Modulox inaugurera ses nouveaux locaux le 12 mars 2018 à Mérignac. Les clients, les fournisseurs et les partenaires de Modulox se retrouveront autour d’un cocktail dînatoire. Cet évènement est co-organisé par le Réseau.</p>
             <a href=""></a>
           </article>
         </li>
         <li>
           <article>
-            <img src="" alt="">
+            <img src="images/bg_blog3-360x240.jpg" alt="Chaîne de construction robotisée">
             <p>ACTUALITÉS</p>
-            <h3></h3>
-            <p></p>
+            <h3>Modulox signe avec un géant des matériaux composites</h3>
+            <p>Ce contrat va permettre à un des leaders dans le domaine des matériaux composites pour le domaine aéronautique et spatial, de se doter d’un équipement de production de plaques de carbone, mises en forme, dédiées.</p>
             <a href=""></a>
           </article>
         </li>
@@ -139,16 +150,16 @@
       <div id="contact-form">
         <h2>Contactez-nous</h2>
         <form action="">
-          <label for="">Votre nom</label>
-          <input type="text" name="" id="">
-          <label for="">Votre adresse de messagerie (obligatoire)</label>
-          <input type="email" name="" id="">
-          <label for="">Objet</label>
-          <input type="text" name="" id="">
-          <label for="">Votre message</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="checkbox" name="" id="">
-          <label for="">J'ai lu et accepte la politique de confidentialité de ce site</label>
+          <label for="user-name">Votre nom</label>
+          <input type="text" name="user-name" id="user-name">
+          <label for="user-email">Votre adresse de messagerie (obligatoire)</label>
+          <input type="email" name="user-email" id="user-email">
+          <label for="subject">Objet</label>
+          <input type="text" name="subject" id="subject">
+          <label for="message">Votre message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="checkbox" name="user-agreement" id="user-agreement">
+          <label for="user-agreement">J'ai lu et accepte la politique de confidentialité de ce site</label>
           <button>Envoyer</button>
         </form>
       </div>
@@ -165,7 +176,7 @@
         <li><a href="">Actualités</a></li>
         <li><a href="">Panier</a></li>
         <li><a href="">Mon compte</a></li>
-        <li><a href="">Poitique de confidentialité</a></li>
+        <li><a href="">Politique de confidentialité</a></li>
         <li><a href="">Contact</a></li>
       </ul>
     </nav> <!-- Pas forcément nav: cf. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav#usage_notes -->

@@ -253,7 +253,7 @@ img {
   align-items: center;
 }
 
-.product-shop p, i {
+.product-shop p, .product-shop i {
   color: var(--gray-darker);
   padding: 0 1rem;
 }
@@ -341,4 +341,49 @@ img {
   text-align: justify;
 }
 
-/* Contact */
+/* Contact info */
+
+#contact-us {
+  background-image: url("../images/bg_contact.jpg");
+  padding: 4rem 0.4rem 0 0.4rem;
+}
+
+#contact-us h2 {
+  margin-bottom: 0;
+}
+
+#contact-us p {
+  margin-top: 0.6rem;
+}
+
+#contact-info, #social {
+  color: var(--white);
+}
+
+#contact-info i {
+  margin-right: .6rem;
+}
+
+#contact-info address {
+  display: inline;
+  font-style: normal;
+}
+
+#contact-info address p {  
+  font-size: 0.9rem;
+}
+
+/* Sociaux */
+
+#social a {
+  color: var(--white);
+}
+
+#social i {
+  font-size: 2rem;
+}
+
+#social ul {
+  display: flex;
+  justify-content: space-around;
+}

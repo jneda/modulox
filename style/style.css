@@ -156,7 +156,7 @@ img {
   gap: 0.6rem;
 }
 
-#hero h1, p, a {
+#hero h1, #hero p, #hero a { /* Comment fonctionne ce groupe de sélecteurs exactement ? */
   color: var(--white);
 }
 
@@ -269,7 +269,7 @@ img {
   background-position: 50% 37%;
 }
 
-#newsletter-subscribe h2, p {
+#newsletter-subscribe h2, #newsletter-subscribe p { /* Si je ne répète pas l'id, le sélecteur affecte tous les <p> ? */
   text-align: center;
   color: var(--white);
 }
@@ -297,7 +297,48 @@ img {
   font: inherit;
 }
 
-#newsletter-subscribe button {
-  
-  margin: auto;
+#newsletter-subscribe button {  
+  margin: 1rem auto 0;
 }
+
+/* Actualités */
+
+#news h2, #news>div>p {
+  color: var(--blackish);
+  text-align: center;
+}
+
+#news h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+#news div>p { /* Ce sélecteur déconne. TODO: fix it! */
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+#news ul {
+  display: grid;
+  margin: 0;
+  gap: 1rem;
+}
+
+.news-item {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.news-item h3 {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.news-item p:nth-of-type(2) {
+  color: var(--gray-darker);
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Contact */

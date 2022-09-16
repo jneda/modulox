@@ -12,6 +12,7 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
@@ -88,6 +89,7 @@ p {
 /* Éléments */
 
 button {
+  display: block;
   width: 10rem;
   height: 2.2rem;
   font: inherit;
@@ -375,6 +377,10 @@ img {
 
 /* Sociaux */
 
+#social {
+  margin-bottom: 3rem;
+}
+
 #social a {
   color: var(--white);
 }
@@ -386,4 +392,63 @@ img {
 #social ul {
   display: flex;
   justify-content: space-around;
+}
+
+/* Formulaire contact */
+
+#contact-form legend {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--cyan-medium);
+  height: 3rem;
+  margin: 0 auto 2rem;
+  padding: 1rem 1rem 0.4rem 1rem;
+  border-radius: 4px;
+}
+
+#contact-form fieldset {
+  background-color: var(--white);
+  border: none;
+  border-radius: 4px;
+}
+
+#contact-form label {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+#contact-form label, #contact-form input {
+  color: var(--blackish);
+  width: 100%;
+}
+
+#contact-form input, #contact-form textarea {
+  display: inline-block;
+  font: inherit;
+  border: none;
+  border-bottom: 1px solid var(--blackish);
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--blackish);
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.4rem;
+  padding: 2rem;
+}
+
+footer a {
+  display: block;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
 }
